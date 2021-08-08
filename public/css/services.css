@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 100px 0;
+
+  background-color: #2e3141;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.main__div {
+  width: 82vw;
+  display: grid;
+  place-items: center;
+  grid-gap: 50px;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-template-rows: repeat(2, minmax(300px, 1fr));
+}
+
+.card {
+  background-color: #353849;
+}
+
+.card-body {
+  color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .main__div {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}

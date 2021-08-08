@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Litwiz Labs</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./public/js/app.js" defer></script>
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Intro  -->
+    <div class="intro">
+      <div class="into-text">
+        <h1 class="hide">
+          <span class="text"
+            >At LitWiz labs we combine cutting-edge computer vision</span
+          >
+        </h1>
+        <h1 class="hide">
+          <span class="text"
+            >technology with bespoke client requirements and craft</span
+          >
+        </h1>
+        <h1 class="hide">
+          <span class="text"
+            >agile practical solutions giving our customers a competitive edge
+          </span>
+        </h1>
+      </div>
+    </div>
+    <div class="slider"></div>
+
+    <!-- End of intro -->
+
+    <nav class="navbar navbar-expand-lg p-4">
+      <a class="navbar-brand" href="./index.html">
+        <img src="./public/images/logo-lt.png" alt="" class="w-75" />
+      </a>
+      <button
+        class="navbar-toggler navbar-light menu"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#info">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./services.html">Services</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <button
+            type="button"
+            class="btn btn-outline-choice pl-5 pr-5 pt-3 pb-3"
+            data-toggle="modal"
+            data-target="#exampleModalLong"
+          >
+            GET IN TOUCH
+          </button>
+        </form>
+      </div>
+    </nav>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModalLong"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLongTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Contact us</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- Our contact form comes here -->
+
+            <div class="container">
+              <form>
+                <label for="fname">First Name</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Your name.."
+                  autocomplete="off"
+                />
+                <label for="lname">Last Name</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  placeholder="Your last name.."
+                  autocomplete="off"
+                />
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your email.."
+                  autocomplete="off"
+                />
+
+                <label for="subject">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write something.."
+                  style="height: 200px"
+                ></textarea>
+
+                <button
+                  type="button"
+                  class="btn btn-outline-choice w-50"
+                  data-toggle="modal"
+                  data-target="#exampleModalLong"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="home" class="">
+      <div class="home__content">
+        <h1 class="label">
+          Welcome to litwiz labs!
+          <span
+            ><img src="./public/images/bars.png" class="label__image" alt=""
+          /></span>
+        </h1>
+        <p class="text-center para">
+          Augmenting human capabilities with Visual AI
+        </p>
+      </div>
+    </section>
+    <section id="info">
+      <div class="home__content">
+        <div class="info__tag">What we do ?</div>
+        <div class="info__label">
+          Offer products and services to make visual AI implementation easy and
+          make everyday tasks/life easy
+        </div>
+      </div>
+    </section>
+
+    <!-- Social media icons -->
+    <div class="icon-bar">
+      <a href="https://www.facebook.com/" class="facebook" target="shreyas">
+        Facebook <i class="fab fa-facebook-square"></i>
+      </a>
+
+      <a
+        href="https://www.instagram.com/shreyas__19/"
+        class="instagram"
+        target="shreyas"
+      >
+        Instagram<i class="fab fa-instagram"></i>
+      </a>
+
+      <a
+        href="https://www.linkedin.com/company/litwizlabs/"
+        class="linkedin"
+        target="shreyas"
+      >
+        Linkedin <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a
+        href="https://twitter.com/shreyas__19"
+        class="twitter"
+        target="shreyas"
+      >
+        Twitter <i class="fab fa-twitter-square"></i>
+      </a>
+    </div>
+
+    <div class="about__parent" id="blog">
+      <div class="about">
+        <div class="first">
+          <h4 class="heading1">Human Pose Estimation</h4>
+          <div class="image">
+            <img src="./public/images/pose.jpg" class="images" alt="" />
+          </div>
+
+          <p class="paras paras1">
+            Human Pose Estimation We use the best-in-class pose estimation
+            solution for high-fidelity body pose tracking, inferring 33 3D
+            landmarks on a human body.
+          </p>
+        </div>
+        <div class="two">
+          <h1 class="heading2">Facial Analysiss</h1>
+          <div class="image">
+            <img
+              src="./public/images/facedetection.jpg"
+              class="images border-50"
+              alt=""
+            />
+          </div>
+
+          <p class="paras paras2">
+            With our detector’s super-realtime performance you can apply it to
+            any live viewfinder experience, such as 3D facial keypoint or
+            geometry estimation which can be integrated with our recognition
+            model which provides >98% accuracy.
+          </p>
+        </div>
+        <div class="third mb-5">
+          <h1 class="heading3">Object Detection & Tracking</h1>
+          <div class="image">
+            <img src="./public/images/objectron.jpg" class="images" alt="" />
+          </div>
+
+          <p class="paras paras3">
+            Our motion analysis component combined with a state-of-the-art
+            object detection model provides smooth and consistent object
+            detection and tracking even on custom objects.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>
